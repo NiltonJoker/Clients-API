@@ -2,7 +2,7 @@ import { App } from "./app"
 
 async function main() {
 
-  const app = new App(3100);
+  const app = new App();
 
   await app.listen();
 }

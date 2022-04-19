@@ -14,6 +14,7 @@ export async function getAllClients (req: Request, res: Response): Promise<Respo
     return res.json(clients[0])
     
   } catch (error) {
+    console.log(error)
     return res.status(500).json({ message: 'Hubo un error obtener los clientes'})
   }
 }
@@ -39,6 +40,7 @@ export async function createClient (req: Request, res: Response): Promise<Respon
     return res.status(201).json(client[0])
     
   } catch (error) {
+    console.log(error)
     return res.status(500).json({ message: 'Hubo un error al crear el cliente'})
   }
 }
@@ -54,6 +56,7 @@ export async function getAverageClientsAge (req: Request, res: Response): Promis
     return res.json(averageAge[0])
 
   } catch (error) {
+    console.log(error)
     return res.status(500).json({ message: 'Hubo un error al obtener el promedio de edades'})
   }
 

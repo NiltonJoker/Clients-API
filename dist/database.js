@@ -14,11 +14,14 @@ const promise_1 = require("mysql2/promise");
 function connect() {
     return __awaiter(this, void 0, void 0, function* () {
         const connection = yield (0, promise_1.createPool)({
-            host: 'localhost',
-            user: 'root',
-            password: '',
+            host: 'zbg0oxxp1tv4.us-east-1.psdb.cloud',
+            user: 'nevaba2a4piq',
+            password: 'pscale_pw_3jrKRTQ10AcORjueIqCY0uTeL2Sxh7rYYAyboRw0OM8',
             database: "clients_db_test",
-            connectionLimit: 10
+            connectionLimit: 10,
+            ssl: {
+                rejectUnauthorized: false
+            }
         });
         return connection;
     });
