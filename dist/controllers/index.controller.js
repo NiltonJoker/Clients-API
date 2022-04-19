@@ -19,6 +19,7 @@ function getAllClients(req, res) {
             return res.json(clients[0]);
         }
         catch (error) {
+            console.log(error);
             return res.status(500).json({ message: 'Hubo un error obtener los clientes' });
         }
     });
@@ -39,6 +40,7 @@ function createClient(req, res) {
             return res.status(201).json(client[0]);
         }
         catch (error) {
+            console.log(error);
             return res.status(500).json({ message: 'Hubo un error al crear el cliente' });
         }
     });
@@ -52,6 +54,7 @@ function getAverageClientsAge(req, res) {
             return res.json(averageAge[0]);
         }
         catch (error) {
+            console.log(error);
             return res.status(500).json({ message: 'Hubo un error al obtener el promedio de edades' });
         }
     });

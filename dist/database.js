@@ -18,7 +18,10 @@ function connect() {
             user: 'root',
             password: '',
             database: "clients_db_test",
-            connectionLimit: 10
+            connectionLimit: 10,
+            ssl: {
+                rejectUnauthorized: false
+            }
         });
         return connection;
     });
