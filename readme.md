@@ -20,4 +20,4 @@ npm start
 * Endpoint para crear clientes
 * Endpoint para obtener el promedio de edad de los clientes
 * En produccion se uso Google Cloud para levantar la API
-* Se hizo de PlanetScale para la base de datos de Mysql
+* Se hizo uso de PlanetScale para la base de datos en produccion de Mysql
